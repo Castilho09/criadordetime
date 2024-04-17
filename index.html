@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <h1 class="p-5 text-center display-4  titulo2">
+      Criando Times de Futebol     
+    </h1>
+  </header>
+
+
+  <main class="container pt-5">
+
+   
+    <div class="row cadastro">
+
+
+
+      
+      <div>
+        <h2 class="display-6 text-center text-white titulo">Monte seu time</h2>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="py-3 text-white">
+          <label for="nome">Nome:</label>
+          <input type="text" class="form-control" placeholder="Digite o nome do seu time"  id="nome" /> 
+        </div>
+
+        <div class="py-3 text-white">
+          <label for="fundacao">Fundação:</label>
+          <input type="date" class="form-control" id="fundacao" /> 
+        </div>
+
+        <div class="py-3 text-white">
+          <label for="categoria">Categoria</label>
+          <select id="categoria" class="form-control">
+            <option value="Campo">Campo</option>
+            <option value="Quadra">Quadra</option>
+            <option value="Fut7">Fut7</option>
+            <option value="Society">Society</option>
+          </select>
+        </div>
+
+        <div class="py-3 text-white">
+          <label for="liga">Liga</label>
+          <select id="liga" class="form-control">
+            <option value="Laliga">La Liga</option>
+            <option value="Brasileirao">Brasileirão</option>
+            <option value="Serie A Tim">Seria A Tim</option>
+            <option value="Bundelisga">Bundesliga</option>
+            <option value="Premier league">Premier league</option>
+          </select>
+        </div>
+
+        <div class="py-3 text-white">
+          <label for="fundador">Fundador:</label>
+          <input type="text" class="form-control" placeholder="Digite o nome do criador do time"  id="fundador" /> 
+        </div>
+
+        </div>
+
+        <div class="py-3 text-center">
+          <button id="btn" class="btn btn-danger ">
+            Criar seu time
+          </button>
+        </div>
+
+      </div>
+    
+  </div>
+   
+      <div class="pt-3">
+        <div class="fundo2">
+          <div>
+            <h2 class="display-6 text-center text-white titulo">Resultados</h2>
+          </div>
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nome do Time</th>
+                <th scope="col">Fundação</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Liga</th>
+                <th scope="col">Fundador</th>
+              </tr>
+            </thead>
+            <tbody id="resultado">
+            </tbody>
+          </table>
+
+          
+        </div>
+      </div>
+   
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
